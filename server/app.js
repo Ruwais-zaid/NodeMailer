@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
     origin: "https://node-mailer-gxxv.vercel.app/",
     credentials: true, 
+    methods:["POST","GET"]
 }));
 
 // Setup multer for file uploads
