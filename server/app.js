@@ -5,6 +5,8 @@ const cors = require('cors');
 const multer = require('multer');
 const fs = require('fs');
 
+require('dotenv').config()
+
 const app = express();
 const port = 8000;
 
@@ -38,8 +40,8 @@ app.post('/', upload.single('resume'), async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail', // Use Gmail service
         auth: {
-            user: 'psmaantest@gmail.com', // Give your gmail account other than this
-            pass: 'yctaqqkupjurawaw' // Give your app password other than this
+            user: process.env.USER_ACCOUNT, // Give your gmail account other than this
+            pass: process.env.USER_PASS // Give your app password other than this
         }
     });
 
