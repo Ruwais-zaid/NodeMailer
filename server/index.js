@@ -62,7 +62,7 @@ app.post('/', upload.single('resume'), async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.send("Hello, world!");
+    res.send("Hello My name is zaid")
 });
 
 // Export the app for Vercel
