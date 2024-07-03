@@ -10,8 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://node-mailer-gxxv.vercel.app/", // Allow all origins for testing
-    methods: ["POST", "GET", "OPTIONS"], // Allow all methods you need
+    origin: "https://node-mailer-gxxv.vercel.app/",
     credentials: true,
 }));
 
