@@ -33,7 +33,7 @@ const App = () => {
     }
 
     try {
-      const response = await fetch("https://node-mailer-api-xi.vercel.app/", {
+      const response = await fetch("https://node-mailer-api-xi.vercel.app", {
         method: "POST",
         credentials: "include",
         body: formData, // Use FormData to include the file and other form data
