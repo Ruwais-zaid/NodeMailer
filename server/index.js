@@ -35,7 +35,7 @@ app.post('/', upload.single('resume'), async (req, res) => {
     });
 
     const mailOptions = {
-        from: 'your-email@gmail.com',
+        from: 'xxxyz96989@gmail.com',
         to: email,
         subject: `New Contact Form Submission from ${name}`,
         text: `You have a new message from ${name} (${email}, Tel: ${tel})\n\nSubject: ${subject}\n\nMessage:\n${message}\n\nPosition: ${position}`,
