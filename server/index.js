@@ -10,9 +10,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://node-mailer-gxxv.vercel.app",
-    methods:["POST","GET"],
-    credentials: true, 
+    origin: "*", // Allow all origins for testing
+    methods: ["POST", "GET", "OPTIONS"], // Allow all methods you need
+    credentials: true,
 }));
 
 // Setup multer for file uploads
