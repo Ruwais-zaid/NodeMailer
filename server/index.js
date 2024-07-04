@@ -28,8 +28,8 @@ app.post('/', upload.single('resume'), async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.USER_ACCOUNT,
-            pass: process.env.USER_PASS
+            user: process.env.USER_ACCOUNT || "psmaantest@gmail.com",
+            pass: process.env.USER_PASS || "yctaqqkupjurawaw"
         }
     });
 
