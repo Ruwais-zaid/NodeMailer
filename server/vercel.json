@@ -10,12 +10,10 @@
     {
       "src": "/(.*)",
       "dest": "/index.js",
-      "methods": ["GET", "POST"]
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
+      "methods": ["GET", "POST"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
     }
   ]
 }
